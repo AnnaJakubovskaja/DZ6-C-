@@ -7,7 +7,7 @@
 
 Console.Write("Введите числа через запятую: ");
 int[] numbers = StringToNum(Console.ReadLine());
-Console.Write("Исследуем массив:");
+Console.Write("Исследуем полученный ряд чисел: ");
 PrintArray(numbers);
 int sum = 0;
 for (int i = 0; i < numbers.Length; i++)
@@ -61,12 +61,10 @@ int[] StringToNum(string input)
 
 void PrintArray(int[] array)
 {
-    Console.Write("[ ");
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
     }
-    Console.Write("]");
 }
 
 
